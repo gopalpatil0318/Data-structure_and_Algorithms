@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-//Numeric hollow halp piramid
+// Numeric hollow halp piramid
 
 int main()
 {
@@ -9,37 +9,28 @@ int main()
     cout << "Enter rows: ";
     cin >> row;
 
-    for(int i=0;i<row;i++)
+    for (int i = 0; i < row; i++)
     {
-        if(i==0 || i==row-1)
+        for (int j = 0; j <= i; j++)
         {
-            for(int j=0;j<=i;j++)
+            if (j == 0 || j == i || i == row - 1)
             {
-                cout << j+1 << " ";
+                cout << j+1;
+            }
+            else
+            {
+                cout << " ";
             }
         }
-        else
-        {
-            for(int j=0;j<=i;j++)
-            {
-                if(j==0 || j==i)
-                {
-                    cout << j+1 << " ";
-                }
-                else
-                {
-                    cout << "  ";
-                }
-            }
-        }
-        cout << endl;
+          cout << endl;
     }
+  
 }
 
-//output
+// output
 // Enter rows: 5
 // 1
-// 1 2
-// 1   3
-// 1     4
-// 1 2 3 4 5
+// 12
+// 1 3
+// 1  4
+// 12345
