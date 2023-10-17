@@ -17,7 +17,8 @@ int linearSearch(int var,int arr[])
 int main()
 {
     int arr[5] = {12,23,34,23,21};
-    int ans = linearSearch(21,arr);
+    int target = 21;
+    int ans = linearSearch(target,arr);
     if(ans == 1)
     {
         cout << "Element is found";
