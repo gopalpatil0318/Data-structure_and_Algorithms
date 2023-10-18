@@ -5,19 +5,22 @@ using namespace std;
 
 int reverse(int arr[],int n)
 {
-    for(int i=0;i<n/2;i++)
+    int left =0,right=n-1;
+    while(left<right)
     {
-        int temp = arr[i];
-        arr[i] = arr[n-i-1];
-        arr[n-i-1] = temp;
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left ++;
+        right --;
     }
 }
 
 int main(){
 
-    int arr[6] = {1,2,3,4,5,6};
-    reverse(arr,6);
-    for(int i=0;i<6;i++)
+    int arr[7] = {1,2,3,4,5,6,7};
+    reverse(arr,7);
+    for(int i=0;i<7;i++)
     {
         cout << arr[i] << " ";
     }
@@ -26,3 +29,6 @@ int main(){
 
     return 0;
 }
+
+//OUTPUT
+//7 6 5 4 3 2 1 
