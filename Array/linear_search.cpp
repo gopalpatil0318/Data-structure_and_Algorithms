@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int linearSearch(int var,int arr[])
+bool linearSearch(int var,int arr[])
 {
     for(int i=0;i<5;i++)
     {
@@ -18,8 +18,8 @@ int main()
 {
     int arr[5] = {12,23,34,23,21};
     int target = 21;
-    int ans = linearSearch(target,arr);
-    if(ans == 1)
+    bool flag = linearSearch(target,arr);
+    if(flag == 1)
     {
         cout << "Element is found";
     }
