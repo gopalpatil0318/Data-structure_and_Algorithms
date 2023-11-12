@@ -1,1 +1,0 @@
-// count number 1 to n
