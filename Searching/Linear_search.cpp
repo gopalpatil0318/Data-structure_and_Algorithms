@@ -23,3 +23,5 @@ int main()
     int pos = search(arr,n,k);
     cout << "Position of " << k << " is " << pos;
 }
+// Output
+// Position of 16 is 4
