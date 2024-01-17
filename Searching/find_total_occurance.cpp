@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-//find total occurances of target number in sorted array
+//Number of occurrence - GeeksForGeeks
+
 
 int findTotalOccurnace(int arr[],int n,int target)
 {
